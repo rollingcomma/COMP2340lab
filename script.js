@@ -2,7 +2,7 @@ $(() => {
     $('form').submit((e) => {
         e.preventDefault();
         $.ajax({
-            url: './createURL.php',
+            url: './authentication.php',
             type: 'POST',
             dataType: 'json',
             data: $('form').serialize(),
